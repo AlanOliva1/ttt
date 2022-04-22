@@ -160,20 +160,18 @@ $model = new TransporteModel();
 										<span class="carousel-control-next-icon" aria-hidden="true"></span>
 										<span class="sr-only">Next</span>
 									</a>
-										<!-- MUESTRA UBICACION EN MAPA -->
-									<span class="item_price">Ubicación del servicio</span>
-									<li class="mb-1">
-										<iframe src="<?php echo $r->__GET('ubicacion_transporte'); ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-									</li>
 
 								</ul>
 								<div class="clearfix"></div>
 							</div>
 						</div>
+						<br><br>
+						<span class="item_price">Ubicación del Servicio </span> <br><br>
+
+						<iframe src="<?php echo $r->__GET('ubicacion_transporte'); ?>" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 
-					<div class="col-lg-6 single-right-left simpleCart_shelfItem">
+					<div class="col-lg-7 single-right-left simpleCart_shelfItem">
 						<h1 class="mb-3"><?php echo $r->__GET('nom_transporte'); ?></h>
 							<p class="mb-3">
 								<span class="item_price"><?php echo  $r->__GET('zona_cobertura'); ?></span>
@@ -184,7 +182,7 @@ $model = new TransporteModel();
 								<p class="my-3">
 									<i class="far fa-hand-point-right mr-2"></i>
 									Caracteristicas
-								</p>
+								</p>
 								<ul>
 									<span class="item_price">El transporte incluye:</span>
 									<li class="mb-1">
@@ -201,16 +199,16 @@ $model = new TransporteModel();
 									<li class="mb-1">
 										<?php echo $r->__GET('descripcion'); ?>
 									</li>
-									
-									
-										<!-- MUESTRA BOTON DE WHATS Y DIRIGE AL CHAT -->
-									<span class="item_price">Si tienes alguna duda o requieres cotizacion da click en este enlace de WhatsApp</span>
-									<li class="mb-1">
+
+                                     <!-- MUESTRA BOTON Y DIRIGE A WHATSAPP-->
+									<span class="item_price">Si tienes alguna duda o necesitas hablar con nuestro transportista. <br> 
+									Da click en este enlace de WhatsApp</span>
+									 <!-- <li class="mb-1">-->
 										<div id="whatsapp-icon" style="text-align:center; padding:3px">
-											<a href="https://wa.me/<?php echo '52'.$r->__GET('contacto_transporte'); ?>">
+											<a href="https://wa.me/<?php echo '52' . $r->__GET('contacto_transporte'); ?>">
 												<img src="assets/img/boton-chat-whatsapp.png" width="200" height="100"></a>
-										</div>																				
-									</li>
+										</div>
+									<!--</li>-->
 								</ul>
 
 							</div>
